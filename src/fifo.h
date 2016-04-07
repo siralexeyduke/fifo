@@ -79,4 +79,11 @@ fifo_result_t fifo_write(fifo_t * f, const void * buf, unsigned int n);
  */
 unsigned int fifo_check(fifo_t * f);
 
+/**
+ * @brief  Gets size of the FIFO element in bytes
+ * @param  f : fifo_t structure 
+ * @retval Size of the element in bytes 
+ */
+unsigned int fifo_get_elsize(fifo_t * f);
+
 #endif // _FIFO_H_

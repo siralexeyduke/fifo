@@ -127,3 +127,12 @@ unsigned int fifo_check(fifo_t * f){
 	}
 }
 
+/**
+ * @brief  Gets size of the FIFO element in bytes
+ * @param  f : fifo_t structure 
+ * @retval Size of the element in bytes 
+ */
+unsigned int fifo_get_elsize(fifo_t * f){
+    return f->elem_size;
+}
+
